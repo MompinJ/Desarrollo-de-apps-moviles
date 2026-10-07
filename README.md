@@ -26,8 +26,10 @@ Repositorio del curso de Implementación de Aplicaciones Móviles.
 | Proyecto | Fecha |
 |----------|-------|
 | [CheckEat](CheckEat) | 24/sep/26 |
+| [Pokedex](Pokedex) | 04/oct/26 |
 
 ## Resumen actividades Ordinario
 
 | # | Tarea | Fecha |
 |---|-------|-------|
+| 1 | [Ejercicio_01-Camara](Periodo-ordinario/Ejercicio_01-Camara) | 01/oct/26 |

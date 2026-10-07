@@ -1,0 +1,69 @@
+import { useState } from 'react';
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, View, Text, Pressable } from 'react-native';
+import Camara from './components/Camara';
+import DetectorRostro from './components/DetectorRostro';
+
+const PANTALLAS = [
+  { clave: 'foto', titulo: 'Fase 1: Foto', componente: Camara },
+  { clave: 'rostro', titulo: 'Fase 2: Rostro', componente: DetectorRostro },
+];
+
+export default function App() {
+  const [activa, setActiva] = useState('rostro');
+
+  // Solo se monta una camara a la vez
+  const Pantalla = PANTALLAS.find(p => p.clave === activa).componente;
+
+  return (
+    <View style={styles.container}>
+      <View style={styles.barra}>
+        {PANTALLAS.map(pantalla => (
+          <Pressable
+            key={pantalla.clave}
+            style={[styles.tab, activa === pantalla.clave && styles.tabActiva]}
+            onPress={() => setActiva(pantalla.clave)}
+          >
+            <Text style={[styles.texto, activa === pantalla.clave && styles.textoActivo]}>
+              {pantalla.titulo}
+            </Text>
+          </Pressable>
+        ))}
+      </View>
+
+      <Pantalla />
+      <StatusBar style="light" />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  barra: {
+    flexDirection: 'row',
+    backgroundColor: '#1e344f',
+    paddingTop: 45,
+    paddingBottom: 8,
+    paddingHorizontal: 8,
+    gap: 6,
+  },
+  tab: {
+    flex: 1,
+    paddingVertical: 8,
+    borderRadius: 8,
+    alignItems: 'center',
+  },
+  tabActiva: {
+    backgroundColor: '#dc1212',
+  },
+  texto: {
+    color: '#c8c8c8',
+    fontSize: 13,
+    fontWeight: 'bold',
+  },
+  textoActivo: {
+    color: '#fff',
+  },
+});

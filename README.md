@@ -33,3 +33,5 @@ Repositorio del curso de Implementación de Aplicaciones Móviles.
 | # | Tarea | Fecha |
 |---|-------|-------|
 | 1 | [Ejercicio_01-Camara](Periodo-ordinario/Ejercicio_01-Camara) | 01/oct/26 |
+| 2 | [Ejercicio_02-Toast](Periodo-ordinario/Ejercicio_02-Toast) | 08/oct/26 |
+| 3 | [Ejercicio_03-DemoIntent](Periodo-ordinario/Ejercicio_03-DemoIntent) | 13/oct/26 |

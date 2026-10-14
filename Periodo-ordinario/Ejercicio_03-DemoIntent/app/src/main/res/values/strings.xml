@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Demo Intent</string>
+
+    <string name="titulo_main">Demo de Intent y Extras</string>
+    <string name="hint_nombre">Tu nombre</string>
+    <string name="hint_numero">Un numero</string>
+    <string name="btn_saludo">Saludo</string>
+    <string name="btn_contador">Contador</string>
+    <string name="btn_conversor">Conversor de temperatura</string>
+    <string name="btn_regresar">Regresar</string>
+    <string name="error_campos">Llena tu nombre y un numero</string>
+    <string name="resultado_contador">El contador regreso: %1$d</string>
+
+    <string name="titulo_saludo">Saludo</string>
+    <string name="saludo_manana">Buenos dias, %1$s</string>
+    <string name="saludo_tarde">Buenas tardes, %1$s</string>
+    <string name="saludo_noche">Buenas noches, %1$s</string>
+    <string name="saludo_detalle">Tu nombre tiene %1$d letras y elegiste el numero %2$d.\nEl numero %2$d es %3$s.</string>
+    <string name="par">par</string>
+    <string name="impar">impar</string>
+
+    <string name="titulo_contador">Contador de %1$s</string>
+    <string name="btn_sumar">+1</string>
+    <string name="btn_restar">-1</string>
+    <string name="btn_reiniciar">Reiniciar</string>
+
+    <string name="titulo_conversor">Conversor de temperatura</string>
+    <string name="conversor_celsius">%1$.1f °C</string>
+    <string name="conversor_resultado">Fahrenheit: %1$.1f °F\nKelvin: %2$.2f K</string>
+    <string name="conversor_estado">Estado del agua: %1$s</string>
+    <string name="estado_solido">solido (hielo)</string>
+    <string name="estado_liquido">liquido</string>
+    <string name="estado_gas">gas (vapor)</string>
+</resources>

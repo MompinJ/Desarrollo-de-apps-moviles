@@ -1,3 +1,4 @@
+import { useNavigation } from '@react-navigation/native';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import Svg, { Circle, Path, Rect } from 'react-native-svg';
 import { borders, colors, typography } from '../constants/designSystem';
@@ -29,21 +30,27 @@ const ICONS = {
 };
 
 const TABS = [
-  { key: 'hoy', label: 'HOY' },
-  { key: 'agua', label: 'AGUA' },
-  { key: 'cal', label: 'CALEND' },
-  { key: 'perfil', label: 'PERFIL' },
+  { key: 'hoy', label: 'HOY', route: 'Comida' },
+  { key: 'agua', label: 'AGUA', route: 'Agua' },
+  { key: 'cal', label: 'CALEND', route: 'Calendario' },
+  { key: 'perfil', label: 'PERFIL', route: 'MiPerfil' },
 ];
 
-export default function TabBar({ active, links = {} }) {
+export default function TabBar({ active }) {
+  const navigation = useNavigation();
+
   return (
     <View style={styles.tb}>
       {TABS.map((tab) => {
         const isOn = tab.key === active;
-        const onPress = links[tab.key];
         const color = isOn ? colors.black : colors.primary.DEFAULT;
         return (
-          <Pressable key={tab.key} style={styles.item} disabled={!isOn && !onPress} onPress={onPress}>
+          <Pressable
+            key={tab.key}
+            style={styles.item}
+            disabled={isOn}
+            onPress={() => navigation.navigate(tab.route)}
+          >
             {ICONS[tab.key](color)}
             <Text style={[styles.label, { color }]}>{tab.label}</Text>
           </Pressable>

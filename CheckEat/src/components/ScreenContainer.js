@@ -20,6 +20,7 @@ export default function ScreenContainer({
       ) : null}
       <ScrollView
         contentContainerStyle={[styles.body, centerContent && styles.bodyCentered]}
+        keyboardShouldPersistTaps="handled"
       >
         {children}
       </ScrollView>

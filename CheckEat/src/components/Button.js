@@ -1,18 +1,18 @@
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { borders, colors, typography } from '../constants/designSystem';
 
-export default function Button({ label, onPress, ghost }) {
+export default function Button({ label, onPress, ghost, disabled }) {
   if (ghost) {
     return (
-      <Pressable onPress={onPress} style={styles.ghost}>
+      <Pressable onPress={onPress} disabled={disabled} style={[styles.ghost, disabled && styles.disabled]}>
         <Text style={styles.ghostLabel}>{label}</Text>
       </Pressable>
     );
   }
 
   return (
-    <View style={styles.shadowWrap}>
-      <Pressable onPress={onPress} style={styles.solid}>
+    <View style={[styles.shadowWrap, disabled && styles.disabled]}>
+      <Pressable onPress={onPress} disabled={disabled} style={styles.solid}>
         <Text style={styles.label}>{label}</Text>
       </Pressable>
     </View>
@@ -54,5 +54,8 @@ const styles = StyleSheet.create({
     letterSpacing: 1.26,
     textTransform: 'uppercase',
     color: colors.black,
+  },
+  disabled: {
+    opacity: 0.5,
   },
 });

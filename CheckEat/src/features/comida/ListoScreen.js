@@ -1,32 +1,27 @@
 import { StyleSheet, Text, View } from 'react-native';
 import Button from '../../components/Button';
-import Kicker from '../../components/Kicker';
-import ProgressBar from '../../components/ProgressBar';
 import ScreenContainer from '../../components/ScreenContainer';
 import { borders, colors, typography } from '../../constants/designSystem';
 
-export default function ListoScreen({ navigation }) {
+function horaActual() {
+  const ahora = new Date();
+  return `${String(ahora.getHours()).padStart(2, '0')}:${String(ahora.getMinutes()).padStart(2, '0')}`;
+}
+
+export default function ListoScreen({ navigation, route }) {
+  const comida = route.params?.comida;
+
   return (
     <ScreenContainer centerContent>
       <View style={styles.checkBadge}>
         <Text style={styles.checkMark}>{'✓'}</Text>
       </View>
 
-      <Text style={styles.title}>Colacion registrada</Text>
-      <Text style={styles.time}>17:52</Text>
-
-      <View style={styles.progressBlock}>
-        <View style={styles.progressRow}>
-          <Kicker tone="green">Avance de hoy</Kicker>
-          <Kicker tone="black">4 / 5</Kicker>
-        </View>
-        <View style={{ marginTop: 8 }}>
-          <ProgressBar percent={80} />
-        </View>
-      </View>
+      <Text style={styles.title}>{comida?.nombre ? `${comida.nombre} registrada` : 'Comida registrada'}</Text>
+      <Text style={styles.time}>{horaActual()}</Text>
 
       <View style={styles.buttonBlock}>
-        <Button label="Volver a hoy" onPress={() => navigation.popToTop()} />
+        <Button label="Volver a hoy" onPress={() => navigation.popTo('Comida')} />
       </View>
     </ScreenContainer>
   );
@@ -61,16 +56,8 @@ const styles = StyleSheet.create({
     color: colors.primary.dark,
     marginTop: 8,
   },
-  progressBlock: {
-    alignSelf: 'stretch',
-    marginTop: 34,
-  },
-  progressRow: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  },
   buttonBlock: {
     alignSelf: 'stretch',
+    marginTop: 34,
   },
 });

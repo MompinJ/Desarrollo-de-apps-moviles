@@ -5,7 +5,8 @@ import ScreenContainer from '../../components/ScreenContainer';
 
 const OPCIONES = ['Todo', 'Solo una parte', 'Algo diferente'];
 
-export default function CheckScreen({ navigation }) {
+export default function CheckScreen({ navigation, route }) {
+  const comida = route.params?.comida;
   const [seleccion, setSeleccion] = useState('Todo');
 
   const handleBack = () => {
@@ -17,7 +18,7 @@ export default function CheckScreen({ navigation }) {
   };
 
   return (
-    <ScreenContainer title="Cuanto comiste?" backLabel="Colacion" onBack={handleBack}>
+    <ScreenContainer title="Cuanto comiste?" backLabel={comida?.nombre ?? 'Hoy'} onBack={handleBack}>
       {OPCIONES.map((opcion, index) => (
         <CheckRow
           key={opcion}
@@ -28,7 +29,7 @@ export default function CheckScreen({ navigation }) {
         />
       ))}
 
-      <Button label="Guardar" onPress={() => navigation.navigate('Listo')} />
+      <Button label="Guardar" onPress={() => navigation.navigate('Listo', { comida })} />
     </ScreenContainer>
   );
 }

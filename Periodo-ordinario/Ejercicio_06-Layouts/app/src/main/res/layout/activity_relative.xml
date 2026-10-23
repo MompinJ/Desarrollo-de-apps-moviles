@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            style="@style/Descripcion"
+            android:text="@string/relative_desc" />
+
+        <!--
+            ===== 1. POSICIONES BASICAS =====
+            En un RelativeLayout, si no se indica nada, TODOS los hijos
+            quedan encimados en la esquina superior izquierda.
+            Por eso cada hijo dice "en relacion a que" se coloca.
+        -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/gris">
+
+            <!-- Relativo al PADRE -->
+            <TextView
+                style="@style/CajaTexto"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/rojo"
+                android:text="@string/rel_sup_izq" />
+
+            <TextView
+                style="@style/CajaTexto"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:background="@color/rojo"
+                android:text="@string/rel_sup_der" />
+
+            <!-- El de en medio tiene id porque los demas se acomodan respecto a el -->
+            <TextView
+                android:id="@+id/tvCentro"
+                style="@style/CajaTexto"
+                android:layout_centerInParent="true"
+                android:background="@color/morado"
+                android:text="@string/rel_centro" />
+
+            <!-- Relativo a OTRA VISTA (usando su id) -->
+            <TextView
+                style="@style/CajaTexto"
+                android:layout_below="@id/tvCentro"
+                android:layout_alignStart="@id/tvCentro"
+                android:background="@color/verde"
+                android:text="@string/rel_debajo" />
+
+            <TextView
+                style="@style/CajaTexto"
+                android:layout_alignTop="@id/tvCentro"
+                android:layout_toStartOf="@id/tvCentro"
+                android:background="@color/azul"
+                android:text="@string/rel_izq" />
+
+            <TextView
+                style="@style/CajaTexto"
+                android:layout_alignTop="@id/tvCentro"
+                android:layout_toEndOf="@id/tvCentro"
+                android:background="@color/azul"
+                android:text="@string/rel_der" />
+
+            <TextView
+                style="@style/CajaTexto"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/naranja"
+                android:text="@string/rel_inf" />
+
+        </RelativeLayout>
+
+        <!--
+            ===== 2. EJEMPLO REAL: TARJETA DE CONTACTO =====
+            Avatar a la izquierda, nombre y correo a su derecha,
+            boton pegado a la derecha y centrado verticalmente.
+        -->
+        <TextView
+            style="@style/Seccion"
+            android:text="@string/relative_form_titulo" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gris"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tvAvatar"
+                style="@style/Caja"
+                android:layout_alignParentStart="true"
+                android:layout_margin="0dp"
+                android:background="@color/azul"
+                android:text="@string/rel_avatar" />
+
+            <Button
+                android:id="@+id/btnLlamar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="@string/rel_llamar" />
+
+            <!-- toEndOf avatar y toStartOf boton: el nombre ocupa el espacio entre los dos -->
+            <TextView
+                android:id="@+id/tvNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_toStartOf="@id/btnLlamar"
+                android:layout_toEndOf="@id/tvAvatar"
+                android:text="@string/rel_nombre"
+                android:textColor="@color/blanco"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvNombre"
+                android:layout_alignStart="@id/tvNombre"
+                android:layout_toStartOf="@id/btnLlamar"
+                android:text="@string/rel_correo"
+                android:textColor="@color/blanco"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

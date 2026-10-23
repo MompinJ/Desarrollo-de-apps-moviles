@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Listas</string>
+
+    <string name="btn_lista">Lista</string>
+    <string name="btn_horizontal">Horizontal</string>
+    <string name="btn_cuadricula">Cuadricula</string>
+    <string name="btn_agregar">Agregar contacto</string>
+    <string name="instrucciones">Toca un contacto para verlo. Mantenlo presionado para borrarlo.</string>
+    <string name="modo_lista">LinearLayoutManager (vertical)</string>
+    <string name="modo_horizontal">LinearLayoutManager (horizontal)</string>
+    <string name="modo_cuadricula">GridLayoutManager (2 columnas)</string>
+</resources>

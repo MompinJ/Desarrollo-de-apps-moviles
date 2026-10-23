@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">VertHorizon</string>
+
+    <string name="titulo_main">VertHorizon</string>
+    <string name="orientacion_vertical">Orientacion: vertical</string>
+    <string name="orientacion_horizontal">Orientacion: horizontal</string>
+    <string name="hint_valor">Escribe un valor</string>
+    <string name="btn_mostrar">Mostrar</string>
+    <string name="etiqueta_mostrado">Valor mostrado:</string>
+    <string name="cb_guardar">Conservar el dato al girar (onSaveInstanceState)</string>
+    <string name="error_valor">Escribe un valor primero</string>
+</resources>

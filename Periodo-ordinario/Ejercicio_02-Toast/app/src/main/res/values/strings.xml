@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ejercicio 02 Toast</string>
+    <string name="hint_texto">Escribe algo</string>
+    <string name="btn_mostrar">Mostrar</string>
+</resources>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ScrollView: permite desplazar la pantalla si el contenido no cabe -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- El contenedor de toda la pantalla tambien es un LinearLayout vertical -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            style="@style/Descripcion"
+            android:text="@string/linear_desc" />
+
+        <!-- ===== 1. VERTICAL ===== -->
+        <TextView
+            style="@style/Seccion"
+            android:text="@string/linear_vertical" />
+
+        <!-- Este LinearLayout cambia de orientacion con el boton (ver Java) -->
+        <LinearLayout
+            android:id="@+id/llDemo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Caja"
+                android:background="@color/rojo"
+                android:text="@string/caja_a" />
+
+            <TextView
+                style="@style/Caja"
+                android:background="@color/verde"
+                android:text="@string/caja_b" />
+
+            <TextView
+                style="@style/Caja"
+                android:background="@color/azul"
+                android:text="@string/caja_c" />
+        </LinearLayout>
+
+        <!-- Un LinearLayout horizontal dentro del vertical: boton + texto en la misma fila -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCambiar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/linear_cambiar" />
+
+            <TextView
+                android:id="@+id/tvOrientacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="@string/linear_es_vertical" />
+        </LinearLayout>
+
+        <!-- ===== 2. HORIZONTAL ===== -->
+        <TextView
+            style="@style/Seccion"
+            android:text="@string/linear_horizontal" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Caja"
+                android:background="@color/rojo"
+                android:text="@string/caja_a" />
+
+            <TextView
+                style="@style/Caja"
+                android:background="@color/verde"
+                android:text="@string/caja_b" />
+
+            <TextView
+                style="@style/Caja"
+                android:background="@color/azul"
+                android:text="@string/caja_c" />
+        </LinearLayout>
+
+        <!-- ===== 3. LAYOUT_WEIGHT ===== -->
+        <TextView
+            style="@style/Seccion"
+            android:text="@string/linear_weight" />
+
+        <!--
+            Con layout_width="0dp" el ancho lo decide el peso.
+            Total de pesos = 1 + 2 + 1 = 4
+            A ocupa 1/4, B ocupa 2/4 (la mitad), C ocupa 1/4
+        -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Caja"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@color/rojo"
+                android:text="@string/peso_1" />
+
+            <TextView
+                style="@style/Caja"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:background="@color/verde"
+                android:text="@string/peso_2" />
+
+            <TextView
+                style="@style/Caja"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@color/azul"
+                android:text="@string/peso_1" />
+        </LinearLayout>
+
+        <!-- ===== 4. GRAVITY ===== -->
+        <TextView
+            style="@style/Seccion"
+            android:text="@string/linear_gravity" />
+
+        <!-- android:gravity se pone en el PADRE y mueve a todos sus hijos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gris"
+            android:gravity="start"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Caja"
+                android:layout_width="80dp"
+                android:background="@color/naranja"
+                android:text="@string/gravity_izq" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@color/gris"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Caja"
+                android:layout_width="80dp"
+                android:background="@color/naranja"
+                android:text="@string/gravity_centro" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@color/gris"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Caja"
+                android:layout_width="80dp"
+                android:background="@color/naranja"
+                android:text="@string/gravity_der" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,3 @@
+<resources>
+    <style name="Theme.Ejercicio04Fragmentado" parent="Theme.Material3.DayNight" />
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <!-- Colores para distinguir cada vista en los ejemplos -->
+    <color name="rojo">#E53935</color>
+    <color name="verde">#43A047</color>
+    <color name="azul">#1E88E5</color>
+    <color name="naranja">#FB8C00</color>
+    <color name="morado">#8E24AA</color>
+    <color name="gris">#9E9E9E</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="negro_transparente">#99000000</color>
+</resources>

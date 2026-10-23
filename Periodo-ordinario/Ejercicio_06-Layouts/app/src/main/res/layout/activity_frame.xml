@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            style="@style/Descripcion"
+            android:text="@string/frame_desc" />
+
+        <!--
+            ===== 1. CAPAS =====
+            Los tres cuadros estan en la misma posicion (arriba a la izquierda).
+            Se recorren con margenes para que se note cual esta encima:
+            el 1 se declara primero (queda abajo) y el 3 al final (queda arriba).
+        -->
+        <TextView
+            style="@style/Seccion"
+            android:text="@string/frame_capas" />
+
+        <FrameLayout
+            android:id="@+id/flCapas"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/gris">
+
+            <TextView
+                style="@style/Caja"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/rojo"
+                android:text="@string/capa_1" />
+
+            <TextView
+                style="@style/Caja"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="40dp"
+                android:background="@color/verde"
+                android:text="@string/capa_2" />
+
+            <TextView
+                style="@style/Caja"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="96dp"
+                android:layout_marginTop="64dp"
+                android:background="@color/azul"
+                android:text="@string/capa_3" />
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btnFrente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/frame_frente" />
+
+        <!--
+            ===== 2. TEXTO ENCIMA DE UNA IMAGEN =====
+            El fondo azul hace de "foto". Con layout_gravity se manda
+            el titulo abajo y la insignia a la esquina superior derecha.
+        -->
+        <TextView
+            style="@style/Seccion"
+            android:text="@string/frame_foto" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+
+            <!-- Capa 1: la "imagen" que llena todo el FrameLayout -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/azul" />
+
+            <!-- Capa 2: titulo con fondo semitransparente, pegado abajo -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/negro_transparente"
+                android:padding="12dp"
+                android:text="@string/frame_foto_titulo"
+                android:textColor="@color/blanco"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Capa 3: insignia en la esquina superior derecha -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|end"
+                android:layout_margin="8dp"
+                android:background="@color/rojo"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
+                android:text="@string/frame_insignia"
+                android:textColor="@color/blanco"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <!--
+            ===== 3. PANTALLA DE CARGA =====
+            La capa de carga esta oculta (visibility="gone") encima del contenido.
+            Al mostrarla tapa todo lo que hay debajo.
+        -->
+        <TextView
+            style="@style/Seccion"
+            android:text="@string/frame_cargando_titulo" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@color/verde">
+
+            <!-- Capa de abajo: el contenido -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="16dp"
+                android:text="@string/frame_contenido"
+                android:textColor="@color/blanco"
+                android:textSize="16sp" />
+
+            <!-- Capa de arriba: la pantalla de carga -->
+            <LinearLayout
+                android:id="@+id/llCargando"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/negro_transparente"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/frame_cargando"
+                    android:textColor="@color/blanco" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btnCarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/frame_mostrar_carga" />
+
+    </LinearLayout>
+
+</ScrollView>

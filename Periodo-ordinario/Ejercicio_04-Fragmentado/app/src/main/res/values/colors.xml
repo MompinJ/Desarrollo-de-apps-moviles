@@ -1,0 +1,7 @@
+<resources>
+    <color name="fondo_inicio">#BBDEFB</color>
+    <color name="fondo_contador">#C8E6C9</color>
+    <color name="fondo_saludo">#FFE0B2</color>
+    <color name="texto">#212121</color>
+    <color name="texto_hint">#757575</color>
+</resources>

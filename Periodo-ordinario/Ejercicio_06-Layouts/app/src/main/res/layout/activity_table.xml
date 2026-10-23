@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            style="@style/Descripcion"
+            android:text="@string/table_desc" />
+
+        <!--
+            ===== 1. FORMULARIO =====
+            Cada TableRow es una fila y cada vista dentro de ella es una columna:
+              columna 0 = etiqueta, columna 1 = campo.
+            stretchColumns="1": la columna 1 se estira para llenar el ancho sobrante.
+            Todas las etiquetas quedan del mismo ancho (el de la mas larga),
+            asi los campos se ven alineados sin calcular nada.
+        -->
+        <TextView
+            style="@style/Seccion"
+            android:text="@string/table_form_titulo" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <TableRow android:gravity="center_vertical">
+
+                <TextView
+                    android:paddingEnd="8dp"
+                    android:text="@string/et_nombre" />
+
+                <EditText
+                    android:id="@+id/etNombre"
+                    android:autofillHints="name"
+                    android:hint="@string/hint_nombre"
+                    android:inputType="textPersonName" />
+            </TableRow>
+
+            <TableRow android:gravity="center_vertical">
+
+                <TextView
+                    android:paddingEnd="8dp"
+                    android:text="@string/et_correo" />
+
+                <EditText
+                    android:id="@+id/etCorreo"
+                    android:autofillHints="emailAddress"
+                    android:hint="@string/hint_correo"
+                    android:inputType="textEmailAddress" />
+            </TableRow>
+
+            <TableRow android:gravity="center_vertical">
+
+                <TextView
+                    android:paddingEnd="8dp"
+                    android:text="@string/et_edad" />
+
+                <EditText
+                    android:id="@+id/etEdad"
+                    android:autofillHints=""
+                    android:hint="@string/hint_edad"
+                    android:inputType="number"
+                    android:maxLength="3" />
+            </TableRow>
+
+            <TableRow android:gravity="center_vertical">
+
+                <TextView
+                    android:paddingEnd="8dp"
+                    android:text="@string/et_carrera" />
+
+                <EditText
+                    android:id="@+id/etCarrera"
+                    android:autofillHints=""
+                    android:hint="@string/hint_carrera"
+                    android:inputType="text" />
+            </TableRow>
+
+            <!-- layout_span="2": el CheckBox ocupa las dos columnas -->
+            <TableRow>
+
+                <CheckBox
+                    android:id="@+id/cbTerminos"
+                    android:layout_span="2"
+                    android:text="@string/cb_terminos" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="8dp">
+
+                <Button
+                    android:id="@+id/btnLimpiar"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/btn_limpiar" />
+
+                <Button
+                    android:id="@+id/btnRegistrar"
+                    android:text="@string/btn_registrar" />
+            </TableRow>
+
+        </TableLayout>
+
+        <!--
+            ===== 2. TABLA DE RESULTADOS =====
+            Solo tiene la fila de encabezado; las demas filas
+            se crean desde Java al presionar Registrar.
+        -->
+        <TextView
+            style="@style/Seccion"
+            android:text="@string/table_resumen_titulo" />
+
+        <TableLayout
+            android:id="@+id/tlResumen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="?android:attr/dividerHorizontal"
+            android:showDividers="middle"
+            android:stretchColumns="1">
+
+            <TableRow android:background="@color/azul">
+
+                <TextView
+                    android:padding="8dp"
+                    android:text="@string/col_campo"
+                    android:textColor="@color/blanco"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:padding="8dp"
+                    android:text="@string/col_valor"
+                    android:textColor="@color/blanco"
+                    android:textStyle="bold" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">Layouts</string>
+
+    <!-- MainActivity -->
+    <string name="titulo_main">Actividad: Layouts</string>
+    <string name="subtitulo_main">Elige un layout para ver su ejemplo</string>
+    <string name="btn_linear">LinearLayout</string>
+    <string name="btn_relative">RelativeLayout</string>
+    <string name="btn_frame">FrameLayout</string>
+    <string name="btn_table">TableLayout</string>
+
+    <!-- LinearLayout -->
+    <string name="linear_desc">Acomoda a sus hijos uno tras otro, en una sola fila o columna, segun android:orientation.</string>
+    <string name="linear_vertical">1. orientation=\"vertical\" (uno debajo de otro)</string>
+    <string name="linear_horizontal">2. orientation=\"horizontal\" (uno al lado de otro)</string>
+    <string name="linear_weight">3. layout_weight (repartir el espacio sobrante 1 : 2 : 1)</string>
+    <string name="linear_gravity">4. gravity (donde se alinean los hijos dentro del layout)</string>
+    <string name="linear_cambiar">Cambiar orientacion</string>
+    <string name="linear_es_vertical">Ahora: vertical</string>
+    <string name="linear_es_horizontal">Ahora: horizontal</string>
+    <string name="caja_a">A</string>
+    <string name="caja_b">B</string>
+    <string name="caja_c">C</string>
+    <string name="peso_1">peso 1</string>
+    <string name="peso_2">peso 2</string>
+    <string name="gravity_izq">start</string>
+    <string name="gravity_centro">center</string>
+    <string name="gravity_der">end</string>
+
+    <!-- RelativeLayout -->
+    <string name="relative_desc">Cada hijo se coloca en relacion al padre (alignParent..., centerInParent) o a otro hijo usando su id (below, toEndOf, alignTop...).</string>
+    <string name="rel_sup_izq">alignParentTop\n+ alignParentStart</string>
+    <string name="rel_sup_der">alignParentTop\n+ alignParentEnd</string>
+    <string name="rel_centro">centerInParent</string>
+    <string name="rel_debajo">below=\"centro\"</string>
+    <string name="rel_izq">toStartOf=\"centro\"</string>
+    <string name="rel_der">toEndOf=\"centro\"</string>
+    <string name="rel_inf">alignParentBottom\n+ centerHorizontal</string>
+    <string name="relative_form_titulo">Ejemplo real: tarjeta de contacto</string>
+    <string name="rel_avatar">AL</string>
+    <string name="rel_nombre">Ana Lopez</string>
+    <string name="rel_correo">ana.lopez@correo.com</string>
+    <string name="rel_llamar">Llamar</string>
+
+    <!-- FrameLayout -->
+    <string name="frame_desc">Apila a sus hijos uno encima de otro: el ultimo que se declara en el XML queda arriba. Se usa layout_gravity para colocarlos.</string>
+    <string name="frame_capas">1. Capas: tres cuadros encimados</string>
+    <string name="capa_1">1</string>
+    <string name="capa_2">2</string>
+    <string name="capa_3">3</string>
+    <string name="frame_foto">2. Texto encima de una \"imagen\" y una insignia</string>
+    <string name="frame_foto_titulo">Puerto de Veracruz</string>
+    <string name="frame_insignia">NUEVO</string>
+    <string name="frame_cargando_titulo">3. Pantalla de carga encima del contenido</string>
+    <string name="frame_contenido">Este es el contenido normal de la pantalla.</string>
+    <string name="frame_cargando">Cargando...</string>
+    <string name="frame_mostrar_carga">Mostrar / ocultar carga</string>
+    <string name="frame_frente">Pasar la capa de abajo al frente</string>
+
+    <!-- TableLayout -->
+    <string name="table_desc">Organiza a sus hijos en filas (TableRow) y columnas, como una tabla de HTML. Es ideal para formularios: etiqueta a la izquierda, campo a la derecha.</string>
+    <string name="table_form_titulo">Formulario de registro</string>
+    <string name="et_nombre">Nombre:</string>
+    <string name="et_correo">Correo:</string>
+    <string name="et_edad">Edad:</string>
+    <string name="et_carrera">Carrera:</string>
+    <string name="hint_nombre">Tu nombre</string>
+    <string name="hint_correo">correo@ejemplo.com</string>
+    <string name="hint_edad">18</string>
+    <string name="hint_carrera">Ing. en Software</string>
+    <string name="cb_terminos">Acepto los terminos (layout_span=\"2\" ocupa dos columnas)</string>
+    <string name="btn_limpiar">Limpiar</string>
+    <string name="btn_registrar">Registrar</string>
+    <string name="table_resumen_titulo">Datos registrados (tabla de resultados)</string>
+    <string name="col_campo">Campo</string>
+    <string name="col_valor">Valor</string>
+    <string name="error_campos">Llena todos los campos</string>
+    <string name="error_terminos">Acepta los terminos</string>
+    <string name="registro_ok">Registro guardado</string>
+</resources>

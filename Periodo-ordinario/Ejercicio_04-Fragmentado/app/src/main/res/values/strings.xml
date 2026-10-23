@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Fragmentado</string>
+
+    <string name="titulo_main">Fragmentado</string>
+    <string name="btn_fragmento1">Inicio</string>
+    <string name="btn_fragmento2">Contador</string>
+    <string name="btn_fragmento3">Saludo</string>
+
+    <string name="titulo_inicio">Fragmento 1</string>
+    <string name="texto_inicio">Este es el fragmento de inicio.\nLa actividad es la misma; solo cambia el fragmento que se muestra en el contenedor.</string>
+
+    <string name="titulo_contador">Fragmento 2</string>
+    <string name="btn_sumar">+1</string>
+    <string name="btn_restar">-1</string>
+
+    <string name="titulo_saludo">Fragmento 3</string>
+    <string name="hint_nombre">Escribe tu nombre</string>
+    <string name="btn_saludar">Saludar</string>
+    <string name="saludo">Hola, %1$s</string>
+    <string name="error_nombre">Escribe tu nombre primero</string>
+</resources>

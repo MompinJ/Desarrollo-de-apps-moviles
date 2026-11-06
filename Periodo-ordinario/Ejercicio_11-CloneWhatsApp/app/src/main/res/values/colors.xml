@@ -1,0 +1,18 @@
+<resources>
+    <color name="verde">#008069</color>
+    <color name="verde_oscuro">#005C4B</color>
+    <color name="verde_claro">#25D366</color>
+    <color name="fondo">#F0F2F5</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="texto">#111B21</color>
+    <color name="texto_secundario">#667781</color>
+    <color name="error">#D93025</color>
+    <color name="avatar_fondo">#C7CED3</color>
+    <color name="fondo_chat">#EFEAE2</color>
+    <color name="burbuja_enviada">#D9FDD3</color>
+    <color name="etiqueta_dia">#E1F2FB</color>
+    <color name="tick">#8696A0</color>
+    <color name="tick_leido">#53BDEB</color>
+    <color name="hora_burbuja">#667781</color>
+    <color name="subtitulo_toolbar">#D9F2EC</color>
+</resources>

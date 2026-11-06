@@ -1,0 +1,14 @@
+<resources>
+    <!-- Android 15 fuerza edge-to-edge con targetSdk 35; aqui se desactiva para que la
+         barra de estado conserve su color y no se encime con la Toolbar. -->
+    <style name="Theme.CloneWhatsApp" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/verde</item>
+        <item name="colorOnPrimary">@color/blanco</item>
+        <item name="colorPrimaryContainer">@color/verde_claro</item>
+        <item name="colorSecondary">@color/verde_claro</item>
+        <item name="android:colorBackground">@color/fondo</item>
+        <item name="android:statusBarColor">@color/verde_oscuro</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
+    </style>
+</resources>

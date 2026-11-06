@@ -1,0 +1,9 @@
+<!-- Burbuja de mensaje enviado: verde claro, esquina superior derecha recta -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/burbuja_enviada" />
+    <corners
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="2dp" />
+</shape>

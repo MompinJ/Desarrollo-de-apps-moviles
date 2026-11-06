@@ -1,0 +1,15 @@
+<!-- Circulo gris con la silueta de persona: avatar de quien no tiene foto -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/avatar_fondo" />
+            <size android:width="96dp" android:height="96dp" />
+        </shape>
+    </item>
+    <item
+        android:bottom="16dp"
+        android:drawable="@drawable/ic_persona"
+        android:left="16dp"
+        android:right="16dp"
+        android:top="12dp" />
+</layer-list>

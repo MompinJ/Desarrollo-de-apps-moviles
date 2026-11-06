@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_nuevo_chat"
+        android:title="@string/home_nuevo_chat"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_perfil"
+        android:title="@string/perfil_titulo"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_cuenta"
+        android:title="@string/cuenta_titulo"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_cerrar"
+        android:title="@string/home_cerrar"
+        app:showAsAction="never" />
+</menu>

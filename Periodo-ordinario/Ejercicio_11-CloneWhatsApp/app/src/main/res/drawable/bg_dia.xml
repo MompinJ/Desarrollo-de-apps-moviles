@@ -1,0 +1,5 @@
+<!-- Etiqueta del dia (Hoy, Ayer...) entre los mensajes -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/etiqueta_dia" />
+    <corners android:radius="8dp" />
+</shape>

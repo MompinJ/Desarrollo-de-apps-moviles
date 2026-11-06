@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">CloneWhatsApp</string>
+
+    <!-- Comunes -->
+    <string name="correo">Correo electronico</string>
+    <string name="password">Contrasena</string>
+    <string name="confirmar_password">Confirmar contrasena</string>
+    <string name="nombre">Nombre de usuario</string>
+    <string name="logo">Logo de la app</string>
+    <string name="sin_config">Falta configurar Supabase: pon la URL y la clave publica en supabase/SupabaseClient.java.</string>
+
+    <!-- Validaciones -->
+    <string name="err_correo">Escribe un correo valido</string>
+    <string name="err_password">Minimo 6 caracteres</string>
+    <string name="err_no_coinciden">Las contrasenas no coinciden</string>
+    <string name="err_nombre">Escribe un nombre de usuario</string>
+
+    <!-- Login -->
+    <string name="login_titulo">Bienvenido</string>
+    <string name="login_subtitulo">Inicia sesion para chatear</string>
+    <string name="login_entrar">Iniciar sesion</string>
+    <string name="login_olvide">Olvidaste tu contrasena?</string>
+    <string name="login_sin_cuenta">No tienes cuenta? Registrate</string>
+
+    <!-- Registro -->
+    <string name="registro_titulo">Crear cuenta</string>
+    <string name="registro_crear">Registrarme</string>
+    <string name="registro_tengo_cuenta">Ya tengo cuenta</string>
+    <string name="registro_confirma">Te enviamos un correo a %1$s. Abre el enlace desde este telefono para activar tu cuenta.</string>
+
+    <!-- Recuperar -->
+    <string name="recuperar_titulo">Recuperar contrasena</string>
+    <string name="recuperar_texto">Escribe tu correo y te enviaremos un enlace para crear una nueva contrasena. Abrelo desde este telefono.</string>
+    <string name="recuperar_enviar">Enviar enlace</string>
+    <string name="recuperar_enviado">Si el correo esta registrado, te llegara un enlace en unos minutos.</string>
+
+    <!-- Nueva contrasena -->
+    <string name="nueva_titulo">Nueva contrasena</string>
+    <string name="nueva_texto">Escribe la nueva contrasena para %1$s</string>
+    <string name="nueva_guardar">Guardar contrasena</string>
+    <string name="nueva_ok">Contrasena actualizada</string>
+    <string name="enlace_invalido">El enlace no es valido o ya expiro. Pide uno nuevo.</string>
+    <string name="correo_confirmado">Correo confirmado. Bienvenido!</string>
+
+    <!-- Home -->
+    <string name="home_cargando">Cargando perfil...</string>
+    <string name="home_sesion">Sesion JWT</string>
+    <string name="home_dispositivo">Este dispositivo</string>
+    <string name="home_refrescar">Renovar token</string>
+    <string name="home_cerrar">Cerrar sesion</string>
+    <string name="home_token_renovado">Token renovado</string>
+    <string name="home_nuevo_chat">Nuevo chat</string>
+    <string name="jwt_usuario">Usuario (sub): %1$s</string>
+    <string name="jwt_rol">Rol: %1$s</string>
+    <string name="jwt_emitido">Emitido: %1$s</string>
+    <string name="jwt_expira">Expira: %1$s</string>
+    <string name="jwt_restante">Tiempo restante: %1$s</string>
+    <string name="jwt_expirado">Expirado (se renovara en la siguiente peticion)</string>
+    <string name="jwt_token">Token: %1$s</string>
+    <string name="disp_token">device_token: %1$s</string>
+    <string name="perfil_info">\@%1$s - desde %2$s</string>
+    <string name="disp_modelo">Modelo: %1$s</string>
+    <string name="disp_estado">Estado: %1$s</string>
+    <string name="disp_registrado">registrado en la tabla devices</string>
+    <string name="disp_registrando">registrando...</string>
+
+    <!-- Fase 4: perfil -->
+    <string name="perfil_titulo">Mi perfil</string>
+    <string name="perfil_foto">Foto de perfil</string>
+    <string name="perfil_cambiar_foto">Cambiar foto</string>
+    <string name="perfil_nombre">Nombre</string>
+    <string name="perfil_nombre_ayuda">Asi te veran tus contactos</string>
+    <string name="perfil_guardar">Guardar</string>
+    <string name="perfil_guardado">Perfil guardado</string>
+    <string name="perfil_completar">Toca para agregar tu nombre y foto</string>
+    <string name="perfil_err_nombre">Escribe tu nombre</string>
+    <string name="perfil_err_username">De 3 a 30 letras, numeros, punto o guion bajo</string>
+    <string name="perfil_err_foto">No se pudo subir la foto: %1$s</string>
+    <string name="perfil_err_leer_foto">No se pudo leer la foto elegida</string>
+
+    <!-- Fase 4: contactos -->
+    <string name="contactos_titulo">Contactos</string>
+    <string name="contactos_buscar">Buscar por nombre o usuario</string>
+    <string name="contactos_vacio">Todavia no hay otros usuarios registrados.</string>
+    <string name="contactos_sin_resultados">Sin resultados para \"%1$s\"</string>
+    <plurals name="contactos_conteo">
+        <item quantity="one">%1$d contacto</item>
+        <item quantity="other">%1$d contactos</item>
+    </plurals>
+
+    <!-- Fase 5: lista de chats -->
+    <string name="cuenta_titulo">Cuenta y sesion</string>
+    <string name="chats_vacio">Todavia no tienes chats.\nToca el boton verde para escribirle a alguien.</string>
+    <string name="chats_sin_mensajes">Toca para enviar un mensaje</string>
+    <string name="fecha_hoy">Hoy</string>
+    <string name="fecha_ayer">Ayer</string>
+
+    <!-- Fase 6: chat -->
+    <string name="chat_escribe">Mensaje</string>
+    <string name="chat_enviar">Enviar</string>
+    <string name="chat_vacio">Envia el primer mensaje</string>
+    <string name="chat_error_envio">No se envio: %1$s. Toca el mensaje para reintentar.</string>
+
+    <!-- Fase 8: estados -->
+    <string name="chat_estado">Estado del mensaje</string>
+    <string name="estado_enviando">Enviando</string>
+    <string name="estado_enviado">Enviado</string>
+    <string name="estado_recibido">Recibido</string>
+    <string name="estado_leido">Leido</string>
+    <string name="estado_error">No enviado</string>
+    <string name="chat_en_linea">en linea</string>
+    <string name="chat_escribiendo">escribiendo...</string>
+    <string name="chat_ult_vez_hoy">ult. vez hoy a las %1$s</string>
+    <string name="chat_ult_vez_ayer">ult. vez ayer a las %1$s</string>
+    <string name="chat_ult_vez_fecha">ult. vez el %1$s a las %2$s</string>
+</resources>

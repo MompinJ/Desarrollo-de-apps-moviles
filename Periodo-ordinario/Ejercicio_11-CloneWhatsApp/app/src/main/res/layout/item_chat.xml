@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Una fila de la lista de chats: foto, nombre, hora, estado y ultimo mensaje, no leidos -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="76dp"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+
+    <ImageView
+        android:id="@+id/imgAvatar"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:contentDescription="@string/perfil_foto"
+        android:scaleType="centerCrop"
+        android:src="@drawable/avatar_placeholder" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtNombre"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/texto"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/txtFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/texto_secundario"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgEstado"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginEnd="3dp"
+                android:importantForAccessibility="no"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtUltimo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/texto_secundario"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtNoLeidos"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_badge"
+                android:gravity="center"
+                android:minWidth="22dp"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:textColor="@color/blanco"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

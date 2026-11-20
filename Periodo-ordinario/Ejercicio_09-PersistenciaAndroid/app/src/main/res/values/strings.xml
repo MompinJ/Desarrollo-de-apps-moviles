@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Persistencia</string>
+
+    <string name="conexion_probando">Probando conexion con Supabase...</string>
+    <string name="conexion_ok">Conectado a Supabase (%1$d productos)</string>
+    <string name="conexion_error">Sin conexion: %1$s</string>
+    <string name="btn_reintentar">Probar de nuevo</string>
+    <string name="btn_agregar">Agregar producto</string>
+    <string name="vacio">No hay productos</string>
+
+    <string name="dialogo_agregar">Agregar producto</string>
+    <string name="dialogo_editar">Editar producto</string>
+    <string name="hint_producto">Producto</string>
+    <string name="hint_descripcion">Descripcion</string>
+    <string name="hint_precio">Precio</string>
+    <string name="btn_guardar">Guardar</string>
+    <string name="btn_actualizar">Actualizar</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="btn_eliminar">Eliminar</string>
+    <string name="confirmar_eliminar">Eliminar \"%1$s\"?</string>
+    <string name="error_campos">Escribe el producto y un precio valido</string>
+    <string name="error_generico">Error: %1$s</string>
+    <string name="instrucciones">Toca un producto para editarlo.</string>
+</resources>

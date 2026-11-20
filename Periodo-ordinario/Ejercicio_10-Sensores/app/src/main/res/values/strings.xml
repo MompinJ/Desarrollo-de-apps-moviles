@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Sensores</string>
+    <string name="abrir_menu">Abrir menu</string>
+    <string name="cerrar_menu">Cerrar menu</string>
+
+    <string name="menu_inicio">Inicio</string>
+    <string name="menu_acelerometro">Acelerometro</string>
+    <string name="menu_podometro">Podometro</string>
+    <string name="menu_giroscopio">Giroscopio</string>
+    <string name="menu_camara">Camara</string>
+    <string name="menu_gps">GPS</string>
+    <string name="menu_magnetometro">Magnetometro</string>
+
+    <string name="inicio_titulo">Actividad Android: Sensores y NavDrawer</string>
+    <string name="inicio_texto">Desliza desde el borde izquierdo o toca el icono del menu para abrir cada ejemplo. Cada sensor vive en su propia Activity.</string>
+
+    <string name="sin_sensor">Este dispositivo no tiene este sensor</string>
+    <string name="valor_xyz">X: %1$.2f\nY: %2$.2f\nZ: %3$.2f</string>
+    <string name="acel_unidad">Aceleracion en m/s2 (incluye la gravedad)</string>
+    <string name="acel_sacudida">Sacudida detectada</string>
+    <string name="acel_quieto">Sin sacudidas</string>
+    <string name="giro_unidad">Velocidad angular en rad/s</string>
+
+    <string name="pasos_titulo">Pasos</string>
+    <string name="pasos_instruccion">Camina con el telefono para sumar pasos</string>
+    <string name="pasos_permiso">Se necesita el permiso de actividad fisica para contar pasos</string>
+    <string name="pasos_reiniciar">Reiniciar</string>
+
+    <string name="camara_tomar">Tomar foto</string>
+    <string name="camara_vacia">Aun no hay ninguna foto</string>
+    <string name="camara_error">No se pudo abrir la camara</string>
+
+    <string name="gps_buscando">Buscando ubicacion...</string>
+    <string name="gps_permiso">Se necesita el permiso de ubicacion</string>
+    <string name="gps_apagado">Activa la ubicacion del dispositivo</string>
+    <string name="gps_datos">Latitud: %1$.6f\nLongitud: %2$.6f\nAltitud: %3$.1f m\nPrecision: %4$.1f m</string>
+    <string name="gps_iniciar">Conceder permiso</string>
+
+    <string name="brujula_grados">%1$d grados %2$s</string>
+    <string name="mag_campo">Campo magnetico: %1$.1f uT</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_inicio" android:title="@string/menu_inicio" />
+        <item android:id="@+id/nav_acelerometro" android:title="@string/menu_acelerometro" />
+        <item android:id="@+id/nav_podometro" android:title="@string/menu_podometro" />
+        <item android:id="@+id/nav_giroscopio" android:title="@string/menu_giroscopio" />
+        <item android:id="@+id/nav_camara" android:title="@string/menu_camara" />
+        <item android:id="@+id/nav_gps" android:title="@string/menu_gps" />
+        <item android:id="@+id/nav_magnetometro" android:title="@string/menu_magnetometro" />
+    </group>
+</menu>

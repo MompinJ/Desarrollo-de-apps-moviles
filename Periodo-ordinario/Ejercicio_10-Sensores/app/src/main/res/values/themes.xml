@@ -1,0 +1,10 @@
+<resources>
+    <style name="Theme.Ejercicio10Sensores" parent="Theme.Material3.DayNight.NoActionBar" />
+
+    <!-- Tema de arranque: la pantalla de splash del sistema con un icono animado -->
+    <style name="Theme.Ejercicio10Sensores.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/azul</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash</item>
+        <item name="postSplashScreenTheme">@style/Theme.Ejercicio10Sensores</item>
+    </style>
+</resources>

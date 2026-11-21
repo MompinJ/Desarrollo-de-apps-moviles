@@ -35,3 +35,11 @@ Repositorio del curso de Implementación de Aplicaciones Móviles.
 | 1 | [Ejercicio_01-Camara](Periodo-ordinario/Ejercicio_01-Camara) | 01/oct/26 |
 | 2 | [Ejercicio_02-Toast](Periodo-ordinario/Ejercicio_02-Toast) | 08/oct/26 |
 | 3 | [Ejercicio_03-DemoIntent](Periodo-ordinario/Ejercicio_03-DemoIntent) | 13/oct/26 |
+| 4 | [Ejercicio_04-Fragmentado](Periodo-ordinario/Ejercicio_04-Fragmentado) | 22/oct/26 |
+| 5 | [Ejercicio_05-VertHorizon](Periodo-ordinario/Ejercicio_05-VertHorizon) | 22/oct/26 |
+| 6 | [Ejercicio_06-Layouts](Periodo-ordinario/Ejercicio_06-Layouts) | 22/oct/26 |
+| 7 | [Ejercicio_07-Listas](Periodo-ordinario/Ejercicio_07-Listas) | 22/oct/26 |
+| 8 | [Ejercicio_08-Persistencia](Periodo-ordinario/Ejercicio_08-Persistencia) | 19/nov/26 |
+| 9 | [Ejercicio_09-PersistenciaAndroid](Periodo-ordinario/Ejercicio_09-PersistenciaAndroid) | 19/nov/26 |
+| 10 | [Ejercicio_10-Sensores](Periodo-ordinario/Ejercicio_10-Sensores) | 19/nov/26 |
+| 11 | [Ejercicio_11-CloneWhatsApp](Periodo-ordinario/Ejercicio_11-CloneWhatsApp) | 05/nov/26 |
